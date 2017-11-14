@@ -1,0 +1,2 @@
+# Formation-projects
+This repository contains different projects that I had to do during my formation at ESIEE Paris. This is mainly an overview of the projects I did as a student engineer specialized in Computer Science. You are free to look at them or even to download them, but most of them aren't portable and would probably only work under my personal computer because of links to files in the source code that are not uploaded to the repository for example.
