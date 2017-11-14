@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = B8;
+NET "cmd[0]" LOC = M4;
+NET "cmd[1]" LOC = L3;
+NET "cmd[2]" LOC = K3;
+NET "cmd[3]" LOC = B4;
+NET "cmd[4]" LOC = G3;
+NET "cmd[5]" LOC = F3;
+NET "cmd[6]" LOC = E2;
+NET "cmd[7]" LOC = N3;
+NET "led" LOC = M5;
+NET "resetn" LOC = G12;

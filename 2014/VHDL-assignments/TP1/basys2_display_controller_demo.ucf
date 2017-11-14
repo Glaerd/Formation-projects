@@ -1,0 +1,29 @@
+
+NET "an[0]" LOC = F12;
+NET "an[1]" LOC = J12;
+NET "an[2]" LOC = M13;
+NET "an[3]" LOC = K14;
+NET "clk" LOC = B8;
+NET "dot_point[0]" LOC = N3;
+NET "dot_point[1]" LOC = E2;
+NET "dot_point[2]" LOC = F3;
+NET "dot_point[3]" LOC = G3;
+NET "dp" LOC = N13;
+NET "en[0]" LOC = B4;
+NET "en[1]" LOC = K3;
+NET "en[2]" LOC = L3;
+NET "en[3]" LOC = P11;
+NET "resetn" LOC = G12;
+NET "seg[0]" LOC = M12;
+NET "seg[1]" LOC = L13;
+NET "seg[2]" LOC = P12;
+NET "seg[3]" LOC = N11;
+NET "seg[4]" LOC = N14;
+NET "seg[5]" LOC = H12;
+NET "seg[6]" LOC = L14;
+#Created by Constraints Editor (xc3s100e-cp132-5) - 2013/12/06
+NET "clk" TNM_NET = "clk";
+
+# PlanAhead Generated physical constraints
+#Created by Constraints Editor (xc3s100e-cp132-4) - 2013/12/12
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
