@@ -1,0 +1,24 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=714
+package.editor.height=442
+package.editor.width=893
+package.editor.x=32
+package.editor.y=73
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+target1.height=62
+target1.name=question2
+target1.type=PackageTarget
+target1.width=80
+target1.x=140
+target1.y=140
+target2.height=62
+target2.name=question1
+target2.type=PackageTarget
+target2.width=80
+target2.x=70
+target2.y=40

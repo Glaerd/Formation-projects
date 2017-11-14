@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=cond\ i1
+comment0.target=Iteration(question2.ExpressionBooleenne,\ Instruction)
+comment1.params=
+comment1.target=question2.ExpressionBooleenne\ cond()
+comment2.params=
+comment2.target=Instruction\ i1()
+numComments=3

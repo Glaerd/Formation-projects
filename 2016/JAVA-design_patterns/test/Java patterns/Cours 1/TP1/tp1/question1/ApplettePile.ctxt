@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment0.text=\r\n\ Appelee\ par\ le\ navigateur\ ou\ le\ visualiseur\ afin\ de\ signaler\ a\ l'Applet\r\n\ qu'il\ est\ maintenant\ pris\ en\ charge\ par\ le\ systeme.\r\n\ Il\ est\ garanti\ que\ ceci\ precedera\ le\ premier\ appel\ de\ la\ methode\ start.\r\n
+comment1.params=ae
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=2

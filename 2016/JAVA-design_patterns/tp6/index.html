@@ -1,0 +1,368 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<title>tp6</title>
+</head>
+
+<body bgcolor="#4FBF00">
+
+<p align="center"><font size="5"><strong>TP 6</strong></font></p>
+<div align="center"><center>
+
+<table border="6" cellpadding="10" bordercolor="#FF0000">
+    <tr>
+        <td><p align="left"><font size="4">Thèmes : </font></p>
+        <ul>
+            <li><p align="left"><a
+                href="http://www.eli.sdsu.edu/courses/spring01/cs635/notes/decorator/decorator.html"><font
+                size="4"><i>Pattern Décorateur</i></font></a> </p>
+            </li>
+            <li><p align="left"><a
+                href="http://www.oreilly.com/catalog/hfdesignpat/chapter/ch03.pdf"><font
+                size="4">le chapitre 3</font></a><font size="4"> <br>
+                extrait de </font><a
+                href="http://www.wickedlysmart.com/HeadFirst/HeadFirstDesignPatterns/HeadFirstPatternsIndex.html"><font
+                size="4">Head First Design Patterns</font></a> </p>
+            </li>
+            <li><p align="left">Persistance :java _sérialisation, XML-JDOM</p>
+            </li>
+        </ul>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<ul>
+    <li>Visualisez le sujet en ouvrant <tt>index.html</tt> du
+        répertoire qui a été créé à l'ouverture de <tt>tp6.jar</tt>
+        par BlueJ; vous aurez ainsi accès aux différents liens
+        qui sont proposés pour vous aider.</li>
+    <li>Soumettez chaque question à l'outil d'évaluation
+        junit3.</li>
+    <li>Note : Aucune installation supplémentaire n'est nécessaire, votre projet 
+    BlueJ contient déjà l'archive <i><tt>jdom</tt></i> (répertoire <tt>+libs</tt>)</li>
+</ul>
+
+<hr>
+
+<p><img src="question1.jpg" width="91" height="73"><font size="5"><strong>Le
+décorateur de boisson</strong></font> </p>
+
+<p><font size="4">L'exemple présenté dans </font><a
+href="http://www.oreilly.com/catalog/hfdesignpat/chapter/ch03.pdf"><font
+size="4">le chapitre 3</font></a><font size="4"> extrait de </font><a
+href="http://www.wickedlysmart.com/HeadFirst/HeadFirstDesignPatterns/HeadFirstPatternsIndex.html"><font
+size="4">Head First Design Patterns</font></a><font size="4">,
+décrit une boisson et des compléments possibles. Le pattern
+décorateur est utilisé afin, de &quot;décorer&quot; la boisson
+choisie avec les souhaits d'un client d'une part, et de fournir
+au client le prix exact de la boisson qu'il a commandée d'autre
+part.</font> </p>
+
+<blockquote>
+    <p><font size="4">Exemple : un café corsé avec du lait,
+    s'écrit: </font></p>
+</blockquote>
+
+<blockquote>
+    <blockquote>
+        <pre><font size="4">Beverage darkRoastWithMilk = new Milk( new DarkRoast());</font>
+</pre>
+    </blockquote>
+    <p><font size="4">et l'obtention de son prix :</font> </p>
+    <blockquote>
+        <pre><font size="4"> double price = darkRoastWithMilk.cost(); </font>
+</pre>
+    </blockquote>
+</blockquote>
+
+<blockquote>
+    <blockquote>
+        <p><img src="capture_09062005_110950.jpg" width="638"
+        height="436"> </p>
+    </blockquote>
+</blockquote>
+
+<blockquote>
+    <blockquote>
+        <p><font size="4">Les différentes boissons héritent de
+        la classe abstraite <strong>Beverage</strong>, <br>
+        La classe abstraite <strong>CondimentDecorator</strong>,
+        instance du pattern Décorateur, représente les
+        exigences possibles du client...</font> </p>
+    </blockquote>
+    <p><font size="4"><b>Remarque:</b> le 3<sup>ème</sup>
+    paramètre d'<tt>assertEquals</tt> est la précision de
+    comparaison entre 2 réels. </font></p>
+        <p>&nbsp; </p>
+    <p><img src="question1.jpg" align="middle" width="91"
+    height="73"><font size="5"><strong>.1)</strong></font><font
+    size="4"><strong> Complétez cette architecture</strong> <br>
+    en ajoutant le chocolat (classe <strong>Chocolate</strong>)
+    comme boisson; le coût de cette boisson est de <strong>2.10</strong>
+    </font></p>
+    <p><font size="4"><img src="question1.jpg" align="middle"
+    width="91" height="73"></font><font size="5"><strong>.2)</strong></font><font
+    size="4"><strong> Complétez la classe ChocolateTest</strong>
+    <br>
+    avec toutes les méthodes correspondant aux boissons
+    suivantes : </font></p>
+    <ul>
+        <li><font size="4">un chocolat seul </font></li>
+        <li><font size="4">un chocolat avec de la crème (Whip) </font></li>
+        <li><font size="4">un chocolat avec deux rations de
+            crème</font></li>
+        <li><font size="4">un chocolat avec de la crème, du
+            soja (soy) et du moka (mocha),... <i>(les goûts ne se
+            discutent pas ...)</i> </font></li>
+        <li><font size="4">un café décaféiné avec du lait </font></li>
+    </ul>
+    <table border="0">
+        <tr>
+            <td><blockquote>
+                <p><font size="4"><img src="tp6.ht1.jpg"
+                width="311" height="343"> </font></p>
+            </blockquote>
+            </td>
+            <td><font size="4"><img
+            src="capture_09072005_102402.jpg" width="368"
+            height="366"></font></td>
+        </tr>
+    </table>
+    <p><font size="4"><img src="question1.jpg" align="middle"
+    width="91" height="73"></font><font size="5"><strong>.3)</strong></font><font
+    size="4"> <strong>Ajoutez le condiment sucre de betteraves</strong>
+    <br>
+    (<strong>classe BeetSugar</strong>), dont le coût est de
+    0.1, sa description : <tt><strong>&quot;Beet Sugar&quot;</strong></tt>.
+    </font></p>
+    <p><font size="4"><img src="question1.jpg" align="middle"
+    width="91" height="73"></font><font size="5"><strong>.4)</strong></font><font
+    size="4"> <strong>Ajoutez</strong> la méthode <strong>public
+    String toString();</strong> <br>
+    qui se contente de retourner <strong>la description et le
+    coût </strong>du produit choisi par le client, <br>
+    selon ce format <em>description $cost</em> </font></p>
+    <p><font size="4">un exemple et la trace attendue </font></p>
+    <blockquote>
+        <p><font size="4"><tt>Beverage b = new BeetSugar( new
+        Whip( new Mocha( new Soy( new HouseBlend() ) ) ) );<br>
+        System.out.println(b);</tt> </font></p>
+    </blockquote>
+    <blockquote>
+        <p><font size="4">trace obtenue:<tt> <strong>"House Blend
+        Coffee, Soy, Mocha, Whip, Beet Sugar $1.44"</strong></tt> </font></p>
+    </blockquote>
+</blockquote>
+
+<hr>
+
+<p><font size="4"><img src="question2.jpg" width="90" height="73"></font></p>
+
+<p><font size="4"><strong>AST du TP4 et Sérialisation java</strong></font> </p>
+<p><font size="4">On reprend le TP4 avec ses Expressions arithmétiques, ses 
+Expressions booléennes et ses Instructions. </font></p>
+<p><font size="4"><i>Rappel : cet ensemble de classes permet de spécifier les 
+Arbres de Syntaxe Abstraite (AST) &nbsp;de petits programmes du petit langage : </i>
+</font><font color="#FF0080" size="4"><i><b>'WhileL'</b></i></font><font size="4"><i>.</i></font>
+</p>
+<blockquote>
+<p>&nbsp;</p>
+<p><font size="4">Exemple :</font> </p>
+<table border="1" cellpadding="2">
+  <tr>
+    <td>Programme</td>
+    <td>
+    <pre>
+x := 5;
+y := x+7;
+</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>AST</td>
+    <td>
+    <pre>
+new Sequence( 
+  new Affectation( new Variable(&quot;x&quot;), new Constante(5) ) ,
+  new Affectation( new Variable(&quot;y&quot;), new Addition( new Variable(&quot;x&quot;), new Constante(7) ) )
+)
+</pre>
+    </td>
+  </tr>
+</table>
+<p><font size="4">
+<img  src="question2.jpg"  width="91" height="73">.1 
+: &nbsp;compléter les classes suivantes par l'AST correspondant au programme donné en 
+commentaire et rappelé dans le tableau suivant. &nbsp;</font> </p>
+<p><font size="4"><i>(Remarque : &nbsp;c'est un exercice d'écriture .!.).</i></font>
+</p>
+<table border="1" cellpadding="2">
+  <tr>
+    <th>Nom de la Classe</th>
+    <th>Programme (commentaire)</th>
+  </tr>
+  <tr>
+    <td>AST_Fact</td>
+    <td>
+    <pre>    xxx := n ; 
+    fact := 1 ; 
+    while ( ~(xxx=0) ) do
+       fact := fact * xxx;  xxx := xxx-1; 
+    fin;
+</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>AST_Mult1</td>
+    <td>
+    <pre>produit = 0 ; 
+while (b &gt; 0) do
+   produit := produit + a;  b := b - 1;
+fin;
+</pre>
+    </td>
+  </tr>
+  </table>
+<hr>
+<p><font size="4">
+<img  src="question2.jpg"  width="91" height="73">.2 
+: Vérifiez avec la classe de Test (Junit/BlueJ) fournie que l'évaluation des
+instances de toutes vos classes écrites en Q2.1 donnent les résultats attendus.
+</font></p>
+<hr>
+<p>
+<img  src="question2.jpg"  width="91" height="73"><font size="4">.3 
+: Construire la classe &quot;boite à outils&quot; <tt>JAVASerialiseDeserialise</tt> qui contient 
+les méthodes statiques :</font> </p>
+<ul>
+  <li><font size="4"><tt>public static void serialjava( IProgr progr, String 
+  nomDuFichier ) {...</tt></font> </li>
+  <li><font size="4"><tt>public static IProgr deserialjava( String nomDuFichier ) {...</tt></font>
+  </li>
+</ul>
+<p><font size="4"><tt>serialjava( progr, nomDuFichier );</tt> devra générer la 
+sérialisation de '<tt>progr</tt>' dans le fichier '<tt>nomDuFichier</tt>'</font> </p>
+<p><font size="4"><tt>deserialjava( nomFichier )</tt> lit le fichier '<tt>nomFichier</tt>', qui 
+doit contenir un objet Java de type '<tt>IProgr</tt>' sérialisé, et retourne cet objet.</font>
+</p>
+<hr>
+<p><font size="4">
+<img  src="question2.jpg"  width="91" height="73">.4 
+: Vérifier avec la classe de Test (Junit/BlueJ) que les évaluations de Q1.2 d'une part, et 
+de nouvelles évaluations après sérialisation et désérialisation d'autre part, donnent des 
+résultats identiques.</font> </p>
+<p><font size="4"><i><b>ATTENTION !</b> Avant la sérialisation, il faut rendre 
+les classes à sérialiser </i><b><i>'<tt>Serializable</tt>'</i></b><i>...</i></font> </p>
+</blockquote>
+<hr>
+<p>
+<img  src="question3.jpg"  alt="[Image]" width="90" height="73"><font size="4"><strong> 
+AST &nbsp;vers XML</strong></font> </p>
+<p>&nbsp;</p>
+<blockquote>
+<p><font size="4">
+<img  src="question3.jpg"  width="90" height="73">.1 :
+<i>(Retour sur le TP4 (le langage WhileL) </i>: &nbsp;Ajouter les visiteurs JDOM pour 
+'Expression' et 'ExpressionBooléenne'&nbsp;, permettant de générer le 
+code XML pour les AST de programmes WhileL. Vous respecterez le format XML 
+suggéré par le fichier XML de AST_Fact :</font> </p>
+<table bgcolor="#FFFFFF" border="1" cellpadding="2">
+  <tr>
+    <th>
+    <p align="center">fichier &quot;AST_Fact.xml&quot;</th>
+  </tr>
+  <tr>
+    <td>
+    <pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;programme&gt;
+  &lt;Sequence&gt;
+    &lt;Affectation&gt;
+      &lt;Variable&gt;xxx&lt;/Variable&gt;
+      &lt;Variable&gt;n&lt;/Variable&gt;
+    &lt;/Affectation&gt;
+    &lt;Sequence&gt;
+      &lt;Affectation&gt;
+        &lt;Variable&gt;fact&lt;/Variable&gt;
+        &lt;Constante&gt;1&lt;/Constante&gt;
+      &lt;/Affectation&gt;
+      &lt;Sequence&gt;
+        &lt;TantQue&gt;
+          &lt;Non&gt;
+            &lt;Egal&gt;
+              &lt;Variable&gt;xxx&lt;/Variable&gt;
+              &lt;Constante&gt;0&lt;/Constante&gt;
+            &lt;/Egal&gt;
+          &lt;/Non&gt;
+          &lt;Sequence&gt;
+            &lt;Affectation&gt;
+              &lt;Variable&gt;fact&lt;/Variable&gt;
+              &lt;Multiplication&gt;
+                &lt;Variable&gt;fact&lt;/Variable&gt;
+                &lt;Variable&gt;xxx&lt;/Variable&gt;
+              &lt;/Multiplication&gt;
+            &lt;/Affectation&gt;
+            &lt;Affectation&gt;
+              &lt;Variable&gt;xxx&lt;/Variable&gt;
+              &lt;Soustraction&gt;
+                &lt;Variable&gt;xxx&lt;/Variable&gt;
+                &lt;Constante&gt;1&lt;/Constante&gt;
+              &lt;/Soustraction&gt;
+            &lt;/Affectation&gt;
+          &lt;/Sequence&gt;
+        &lt;/TantQue&gt;
+        &lt;Afficher&gt;
+          &lt;Variable&gt;fact&lt;/Variable&gt;
+        &lt;/Afficher&gt;
+      &lt;/Sequence&gt;
+    &lt;/Sequence&gt;
+  &lt;/Sequence&gt;
+&lt;/programme&gt;
+
+</pre>
+    </td>
+  </tr>
+</table>
+<hr>
+<p><font size="4">
+<img src="question3.jpg"  width="90" height="73">.2 :
+Construire la classe &quot;boite à outils&quot; <tt>SerialiseDeserialiseAST_XML</tt> qui contient 
+les méthodes statiques :</font> </p>
+<ul>
+  <li><font size="4"><tt>public static void serialAst2xml( IProgr progr, String 
+  nomDuFichier ) {...</tt></font> </li>
+  <li><font size="4"><tt>public static Element deserialXml( String nomDuFichier )
+  {...</tt></font> </li>
+</ul>
+<p><font size="4">Remarques : </font></p>
+<ul>
+  <li><font size="4"><tt>serialAst2xml( progr, nomDuFichier )</tt> devra générer le code 
+  XML de '<tt>progr</tt>' dans le fichier '<tt>nomDuFichier</tt>'</font> </li>
+  <li><font size="4"><tt>deserialXml( nomDuFichier )</tt> retourne 
+  l'élément-racine du code XML contenu dans le fichier '<tt>nomDuFichier</tt>'.</font>
+  </li>
+</ul>
+<p><font size="4"><i><b>Attention !</b> Hélas, par <tt>deserialXml</tt>, on ne récupère pas 
+un objet de classe <tt>IProgr</tt>, sauf à utiliser des API spécialisées comme les api 
+Beans ou JaxB (qui ne sont pas étudiées dans le cadre de ce cours). Il faut donc
+recréer l'AST &quot;à la main&quot;...</i></font> </p>
+<hr>
+<p><font size="4">
+<img src="question3.jpg" width="90" height="73">.3 :
+Dans la classe <tt>XML2AST</tt>, complétez la méthode statique :</font></p>
+<p><font size="4"><tt>public static Instruction xmlInst2ast( Contexte m, Element 
+element )</tt> qui permet de reconstruire un ast (cf. Question2) à partir d'un élément 
+XML.</font> </p>
+<hr>
+<p>
+<img src="question3.jpg" width="90" height="73"><font size="4">.4 :
+Vérifier avec les classes de Test (Junit/BlueJ) que les évaluations de Q3.2 d'une part, et de 
+nouvelles évaluations après sérialisation-XML et désérialisation-XML + 
+reconstruction de l'AST d'autre part, donnent des résultats identiques.</font> </p>
+</blockquote>
+<hr>
+</body>
+</html>

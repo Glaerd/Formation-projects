@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=taille
+comment0.target=Pile2(int)
+comment0.text=Creation\ d'une\ pile.\n@param\ taille\ la\ taille\ de\ la\ pile,\ la\ taille\ doit\ etre\ >\ 0\n\n
+comment1.target=Pile2()
+comment10.params=o
+comment10.target=boolean\ equals(Object)
+comment11.target=int\ hashCode()
+comment2.params=o
+comment2.target=void\ empiler(T)
+comment3.target=T\ depiler()
+comment4.target=T\ sommet()
+comment5.target=boolean\ estVide()
+comment5.text=Effectue\ un\ test\ de\ l'etat\ de\ la\ pile.\n@return\ vrai\ si\ la\ pile\ est\ vide,\ faux\ autrement\n\n
+comment6.target=boolean\ estPleine()
+comment6.text=Effectue\ un\ test\ de\ l'etat\ de\ la\ pile.\n@return\ vrai\ si\ la\ pile\ est\ pleine,\ faux\ autrement\n\n
+comment7.target=String\ toString()
+comment7.text=Retourne\ une\ representation\ en\ String\ d'une\ pile,\ \ncontenant\ la\ representation\ en\ String\ de\ chaque\ element.\n@return\ une\ representation\ en\ String\ d'une\ pile\n\n
+comment8.target=int\ capacite()
+comment9.target=int\ taille()
+numComments=12

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n1\ n2
+comment0.target=AST_Mult2(int,\ int)
+comment1.params=
+comment1.target=tp4.question1.Contexte\ getMem()
+comment2.params=
+comment2.target=tp4.question3.Instruction\ getAST()
+numComments=3

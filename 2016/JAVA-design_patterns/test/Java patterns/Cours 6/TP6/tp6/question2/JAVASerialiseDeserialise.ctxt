@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=p\ nomDuFichier
+comment0.target=void\ serialjava(IProgr,\ java.lang.String)
+comment1.params=nomDuFichier
+comment1.target=IProgr\ deserialjava(java.lang.String)
+numComments=2

@@ -1,0 +1,117 @@
+#include<iostream>
+#include "box2d_iterator.hh"
+#include "neighb2d_iterator.hh"
+#include "image2d.hh"
+#include<string>
+#include<limits>
+#include<queue>
+
+template <typename T>
+std::vector<unsigned int> dMap(image2d<T> im){
+
+	std::vector<unsigned int> dmap((int) im.vec().size(), std::numeric_limits<int>::max());
+	int k;
+	std::queue<point2d_<int>> q;
+	point2d_<int> pt;
+	std::cout << "Max col and Max row : " << im.getBox().pMax().col() << " - " << im.getBox().pMax().row() << std::endl;
+	for(k = 0; k < (int) im.vec().size(); k++){
+		point2d_<int> p1 = point2d_<int>(k/(im.getBox().pMax().col())+1,(k)%(im.getBox().pMax().col())+1);
+		if(im.vec()[(int) im.vec().size() - k - 1] == '1'){
+			dmap[k] = 0;
+			neighb2d_iterator<int> neigh(p1 ,im.getBox());
+			int l;
+			std::cout << "Point : " << p1.row() << " - " << p1.col() << std::endl;
+			for(l = 0; l < (int) neigh.vec_().size(); l++){
+
+				std::cout << neigh.vec_()[l].row() << " - " << neigh.vec_()[l].col() << std::endl;
+				
+				if(im.vec()[(int) im.vec().size() - (neigh.vec_()[l].row()-1)*im.getBox().pMax().col()+neigh.vec_()[l].col() - 1 - 1] == 0){
+					q.push(p1);
+					break;
+				}
+			}
+		}
+	}
+	
+	while(!q.empty()){
+		pt = q.front();
+		q.pop();
+		neighb2d_iterator<int> neigh(pt ,im.getBox());
+		int l;
+		for(l = 0; l < (int) neigh.vec_().size(); l++){
+			int n = (neigh.vec_()[l].row()-1)*im.getBox().pMax().col()+neigh.vec_()[l].col() - 1;
+			if((int) dmap[n] == std::numeric_limits<int>::max()){
+				dmap[n] = dmap[(pt.row() - 1)*im.getBox().pMax().col()+pt.col() - 1] + 1;
+				q.push(neigh.vec_()[l]);
+			}
+		}
+	}
+	
+	return dmap;
+	
+}
+
+void start()
+{
+	int d1,d2;
+	image2d<char,int> im;
+	std::cout << "Numbers of rows on image : ";
+	scanf("%d", &d1);
+	std::cout << "Numbers of cols on image : ";
+	scanf("%d", &d2);
+	int k,l,m;
+	std::vector<char> im_vec;
+	std::vector<char>::iterator it;
+	it = im_vec.begin();
+	std::string ln;
+	int max = 30;
+	int col_num = 0;
+	for (k = 0; k < d1; k++)
+	{
+		ln = "";
+		std::cout << "Write row with '0' and '1' : ";
+		std::cin >> ln;
+		if(k==0) {
+			max = (int) ln.length();
+			col_num = (int) ln.length();
+		}
+		if((int) ln.length() > max) {
+			std::cout << "Number of cols too high !" << std::endl;
+			k--;
+		}
+		if((int) ln.length() < col_num) {
+			std::cout << "Number of cols too low !" << std::endl;
+			k--;
+		}
+		if((int) ln.length() == col_num) {
+			for(l = 0; l < (int) ln.length(); l++){
+				char el = ln[l];
+				it = im_vec.insert ( it , el );
+			}
+		}
+		for(m = max; m < d2; m++){
+			it = im_vec.insert ( it , " " );
+		}
+	}
+	im.vec() = im_vec;
+	box2d<int> b(point2d_<int>(1,1),point2d_<int>((int) im.vec().size()/max,max));
+	box2d_iterator<int> b_it(b);
+	
+	im.getBox() = b;
+	
+	std::vector<unsigned int> dmap = dMap(im);
+	int z;
+	for(z = 0; z < (int) dmap.size(); z++){
+		if(z % im.getBox().pMax().col() == 0) std::cout << std::endl;
+		std::cout << dmap[z] << " ";
+	}
+	std::cout << std::endl << std::endl;
+}
+
+
+int main()
+{
+	start();
+	return 0;
+}
+

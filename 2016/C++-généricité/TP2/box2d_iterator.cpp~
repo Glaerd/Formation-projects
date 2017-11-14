@@ -1,0 +1,41 @@
+#include "box2d_iterator.hh"
+
+template <typename T>
+box2d_iterator::box2d_iterator(box2d<T> b_)
+{
+	b = b_;
+}
+
+point2d box2d_iterator::elt() const
+{
+	return p_it;
+}
+void box2d_iterator::start()
+{
+	p_it = b.pMin();
+}
+void box2d_iterator::end() 
+{
+	p_it = b.pMax();
+}
+
+void box2d_iterator::next()
+{
+	point2d p_temp;
+	if(p_it.col() <= b.pMax().col() || p_it.row() <= b.pMax().row())
+	{
+		if(p_it.col() >= b.pMax().col()) 
+		{
+			std::cout << p_it.col() << " " << p_it.row() << std::endl << "RETURN " << std::endl;
+			p_temp.col() = b.pMin().col();
+			p_temp.row() = p_it.row() + 1;
+			p_it = p_temp;
+		}
+		else {
+			std::cout << p_it.col() << " " << p_it.row() << std::endl;
+			p_temp.row() = p_it.row();
+			p_temp.col() = p_it.col() + 1;
+			p_it = p_temp;
+		}
+	}
+}

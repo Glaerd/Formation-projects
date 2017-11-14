@@ -1,0 +1,8 @@
+#include <vector>
+#include "neighb2d_iterator.hh"
+
+
+template <typename T>
+neighb2d_iterator::neighb2d_iterator(point2d_<T> p){
+		vec.insert({p.row(),p.col()-1},p.row()-1,p.col()-1},p.row(),p.col()+1},p.row()+1,p.col()+1});
+}

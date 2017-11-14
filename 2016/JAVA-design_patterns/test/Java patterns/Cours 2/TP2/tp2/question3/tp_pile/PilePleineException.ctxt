@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=PilePleineException()
+comment1.params=message
+comment1.target=PilePleineException(String)
+numComments=2

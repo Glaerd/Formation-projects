@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setUp()
+comment1.params=
+comment1.target=void\ tearDown()
+comment2.params=
+comment2.target=void\ test_XML2AST()
+comment3.params=n
+comment3.target=int\ fact(int)
+numComments=4

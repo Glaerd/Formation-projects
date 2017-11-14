@@ -1,0 +1,54 @@
+#include<stdlib.h>
+class vector{
+
+	public:
+		int dim() const{
+			int np = n;
+			return np;
+		}
+		int dat(int i) const{
+			int j = data[i];
+			return j;
+		}
+		int& dat(int i){
+			int& j = data[i];
+			return j;
+		}
+
+		vector() = default;
+		vector(int i){
+			n = i;
+			data = new int[i];
+		};
+
+		void print(){
+			printf("\nTaille : %d\n", n);
+			int i;
+			printf("[");
+			for(i = 0; i < n; i++){
+				if(i != n-1) printf("%d  ", data[i]);
+				else printf("%d", data[i]);
+			}
+			printf("]\n");
+		}
+
+		int operator[](int element) const{
+			return data[element];
+		};
+		int& operator[](int element){
+			return data[element];
+		};
+
+		void operator=(const vector& element){
+			if(n == element.n){
+				int i;				
+				for(i = 0; i < n; i++){
+					data[i] = element.data[i];
+				}
+			}
+		}
+
+	private:
+		int n;
+		int* data;
+};

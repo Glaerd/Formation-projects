@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=p\ nomDuFichier
+comment0.target=void\ serialAst2xml(question2.IProgr,\ java.lang.String)
+comment1.params=nomDuFichier
+comment1.target=org.jdom.Element\ deserialXml(java.lang.String)
+numComments=2

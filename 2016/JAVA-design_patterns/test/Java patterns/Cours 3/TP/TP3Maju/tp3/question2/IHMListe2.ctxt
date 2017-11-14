@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=liste\ occurrences
+comment0.target=IHMListe2(List<String>,\ Map<String,Integer>)
+comment1.params=ae
+comment1.target=void\ actionPerformed(ActionEvent)
+comment2.params=ie
+comment2.target=void\ itemStateChanged(ItemEvent)
+comment3.params=pMap
+comment3.target=List\ sortList(Map)
+comment4.params=prefixe
+comment4.target=boolean\ retirerDeLaListeTousLesElementsCommencantPar(String)
+numComments=5

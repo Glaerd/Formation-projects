@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=taille
+comment0.target=Pile(int)
+comment1.params=
+comment1.target=Pile()
+comment2.params=o
+comment2.target=void\ empiler(java.lang.Object)
+comment3.params=
+comment3.target=java.lang.Object\ depiler()
+comment4.params=
+comment4.target=boolean\ estVide()
+comment5.params=
+comment5.target=boolean\ estPleine()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

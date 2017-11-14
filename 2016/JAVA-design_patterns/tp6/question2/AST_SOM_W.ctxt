@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=AST_SOM_W(int)
+comment0.text=mod\u00E8le\ "java\ Style"\ dont\ l'AST\ "WhileL\ style"\ \ est\ \u00E0\ construire\ ci\ dessous\r\nn\=100;\r\nsom\ \=\ 0\ ;\ \r\nwhile\ (n>\ 0)\ {\r\nsom\ \=\ som+n\ ;\ n\ \=\ n\ -\ 1\ ;\r\n}\r\n\ afficher(som);\r\n
+comment1.params=
+comment1.target=tp4.question1.Contexte\ getMem()
+comment2.params=
+comment2.target=tp4.question3.Instruction\ getAST()
+numComments=3

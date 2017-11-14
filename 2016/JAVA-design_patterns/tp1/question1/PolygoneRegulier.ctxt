@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=nombreDeCotes\ longueurDuCote
+comment0.target=PolygoneRegulier(int,\ int)
+comment0.text=\ Creation\ d'un\ polygone\ regulier\n\ @param\ nombreDeCotes\ \ (nombreDeCotes\ >\=1\ &&\ nombreDeCotes\ <100)\n\ @param\ longueurDuCote\ (longueurDuCote>\=1\ &&\ longueurDuCote\ <\ 10000)\n
+comment1.params=
+comment1.target=int\ perimetre()
+comment2.params=
+comment2.target=int\ surface()
+comment3.params=x
+comment3.target=double\ cotg(double)
+comment4.params=obj
+comment4.target=boolean\ equals(java.lang.Object)
+comment5.params=
+comment5.target=int\ hashCode()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

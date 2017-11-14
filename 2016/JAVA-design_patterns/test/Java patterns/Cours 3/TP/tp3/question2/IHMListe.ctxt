@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=liste\ occurrences
+comment0.target=IHMListe(List<String>,\ Map<String,Integer>)
+comment1.params=ae
+comment1.target=void\ actionPerformed(ActionEvent)
+comment1.text=ne\ pas\ modifier\ les\ affichages,\ les\ classes\ de\ tests\ en\ ont\ besoin\ ...\ \n
+comment2.params=ie
+comment2.target=void\ itemStateChanged(ItemEvent)
+comment3.params=prefixe
+comment3.target=boolean\ retirerDeLaListeTousLesElementsCommencantPar(String)
+numComments=4

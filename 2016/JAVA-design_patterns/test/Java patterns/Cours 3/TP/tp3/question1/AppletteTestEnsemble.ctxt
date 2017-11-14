@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment1.params=
+comment1.target=void\ initComponents()
+comment10.params=
+comment10.target=void\ diffSymetriqueActionPerformed()
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=ae
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=ae
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=ae
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=saisie
+comment6.target=Ensemble\ getSet(javax.swing.JTextField)
+comment7.params=
+comment7.target=void\ differenceActionPerformed()
+comment8.params=
+comment8.target=void\ intersectionActionPerformed()
+comment9.params=
+comment9.target=void\ unionActionPerformed()
+numComments=11

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Ensemble()
+comment1.target=int\ size()
+comment2.target=Iterator<T>\ iterator()
+comment3.params=t
+comment3.target=boolean\ add(T)
+comment4.params=e
+comment4.target=Ensemble<T>\ union(Ensemble<?\ extends\ T>)
+comment5.params=e
+comment5.target=Ensemble<T>\ inter(Ensemble<?\ extends\ T>)
+comment6.params=e
+comment6.target=Ensemble<T>\ diff(Ensemble<?\ extends\ T>)
+comment7.params=e
+comment7.target=Ensemble<T>\ diffSym(Ensemble<?\ extends\ T>)
+numComments=8

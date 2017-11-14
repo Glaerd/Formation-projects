@@ -1,0 +1,14 @@
+#include <vector>
+#include "neighb2d_iterator.hh"
+
+
+template <typename T>
+neighb2d_iterator<T>::neighb2d_iterator(point2d_<T> p){
+		point2d_<T> neighs[] = {point2d_<T>(p.row(),p.col()-1),point2d_<T>(p.row()-1,p.col()),point2d_<T>(p.row(),p.col()+1),point2d_<T>(p.row()+1,p.col())};
+		vec.insert(vec.begin(), neighs, neighs + 4);
+}
+
+template <typename T>
+std::vector<point2d_<T>> neighb2d_iterator<T>::vec_(){
+	return vec;
+}

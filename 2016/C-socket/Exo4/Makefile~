@@ -1,0 +1,7 @@
+all : client server
+client: client.c
+	gcc client.c -Wall -o client
+server: server.c
+	gcc server.c -Wall -o server
+mrproper:
+	rm client server

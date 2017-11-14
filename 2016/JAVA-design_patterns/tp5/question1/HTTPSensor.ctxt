@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=HTTPSensor()
+comment0.text=\ Constructeur\ d'une\ connexion\ avec\ un\ Capteur,\ valeur\ par\ defaut\r\n\ @param\ \ urlSensor\ l'URL\ du\ capteur\ sur\ le\ Web\ en\ protocole\ HTTP\r\n
+comment1.params=pUrlSensor
+comment1.target=HTTPSensor(java.lang.String)
+comment1.text=\ Constructeur\ d'une\ connexion\ avec\ un\ Capteur,\ syntaxe\ habituelle\r\n\ http\://site\:port/\r\n\ @param\ \ urlSensor\ l'URL\ du\ capteur\ sur\ le\ Web\ en\ protocole\ HTTP\r\n
+comment2.params=
+comment2.target=float\ value()
+comment2.text=\ Lecture\ de\ la\ valeur\ de\ humidite\ relative\r\n
+comment3.params=
+comment3.target=long\ minimalPeriod()
+comment3.text=\ periode\ minimale\ de\ scrutation\r\n\ @return\ la\ periode\ minimale\ (en\ local\ ou\ a\ distance)\r\n
+comment4.params=
+comment4.target=java.lang.String\ getUrl()
+comment4.text=\ lecture\ de\ l'URL\r\n\ @return\ l'url\ associee\ a\ ce\ capteur\r\n
+comment5.params=
+comment5.target=java.lang.String\ request()
+comment5.text=\ Lecture\ des\ informations\ issues\ de\ ce\ capteur\r\n\ @return\ la\ totalite\ de\ la\ page\ lue\r\n\ @throws\ Exception\ en\ cas\ d'erreur\r\n
+comment6.params=params
+comment6.target=java.lang.String\ request(java.util.Properties)
+comment6.text=\ Lecture\ des\ informations\ issues\ de\ ce\ capteur\r\n\ @param\ params\ les\ parametres\ \r\n\ @return\ la\ totalite\ de\ la\ page\ lue\r\n\ @throws\ Exception\ en\ cas\ d'erreur\r\n
+comment7.params=pProxyHost\ pProxyPort
+comment7.target=void\ setHttpProxy(java.lang.String,\ int)
+comment7.text=\ Mise\ en\ place\ du\ proxy\ si\ necessaire\r\n\ \ rappel\ a\ l'esiee\ \:\ proxyHost\=cache.esiee.fr\ proxyPort\=3128\r\n\ \ attention,\ aucune\ verification\ de\ la\ validite\ de\ l'URL\ transmise\ n'est\ effectuee\r\n\ \ @param\ proxyHost\ adresse\ du\ proxy\r\n\ \ @param\ proxyPort\ le\ port\ du\ proxy\r\n
+numComments=8

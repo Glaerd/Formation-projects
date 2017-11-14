@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=pFileName\ pSuccessor
+comment0.target=FileHandler(java.lang.String,\ Handler)
+comment1.params=pValue
+comment1.target=boolean\ handleRequest(java.lang.Float)
+comment2.params=
+comment2.target=void\ writeHTML()
+comment2.text=\ Cette\ methode\ genere\ un\ fichier\ HTML\ .\n
+numComments=3

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=pArgs
+comment0.target=void\ main(java.lang.String[])
+comment1.params=pC
+comment1.target=java.lang.String\ arbreXML(question1.Cotisant)
+comment1.text=Retourne\ dans\ une\ String\ (un\ arbre\ en\ XML)\ utilisee\ en\ question4.
+numComments=2

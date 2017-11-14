@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Observable()
+comment1.params=obs
+comment1.target=void\ ajouter(Observateur)
+comment2.params=obs
+comment2.target=void\ retirer(Observateur)
+comment3.params=
+comment3.target=void\ notifier()
+numComments=4

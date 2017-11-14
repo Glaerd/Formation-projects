@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=List<String>\ listeDesMots()
+comment0.text=Obtention\ d'une\ liste\ de\ mots\ a\ partir\ de\ la\ constante\ CHAPITRE2\ *\n
+comment1.params=liste
+comment1.target=Map<String,Integer>\ occurrencesDesMots(List<String>)
+comment1.text=Obtention\ d'une\ liste\ de\ couples\ <String,Integer>,\ \na\ chaque\ mot\ du\ CHAPITRE2,\ est\ associe\ son\ nombre\ d'occurrence\n\n
+numComments=2

@@ -1,0 +1,62 @@
+#include<stdlib.h>
+
+class matrix{
+	
+	public:
+		int dim1(){
+			int np = m;
+			return np;
+		}
+		int dim1(){
+			int np = n;
+			return np;
+		}
+		int dat(int i, int j) const{
+			int k = data[j+i*j];
+			return k;
+		}
+		int& dat(int i, int j){
+			int& k = data[j+i*j];
+			return k;
+		}
+
+		matrix() = default;
+		matrix(int i, int j){
+			m = i;
+			n = j;
+			data = new int[i*j];
+		}
+
+		void print(){
+			printf("\nTaille : %d\n", n*m);
+			int i,j;
+			for(i = 1; i <= m; i++){
+				for(j = 1; j <= n; j++){
+					if(j != n) printf("%d  ", data[j+i*j]);
+					else printf("%d\n", data[j+i*j]);
+				}
+			}
+			printf("\n");
+		}
+
+		void printligne(){
+			printf("\nTaille : %d\n", n*m);
+			int i;
+			for(i = 0; i < m*n; i++){
+				if(i != m*n-1) printf("%d  ", data[i]);
+				else printf("%d\n", data[i]);
+			}
+			printf("\n");
+		}
+
+	int operator()(const int& i, const int& j) const{
+		return data[j+i*j];
+	}
+	int& operator()(const int& i, const int& j){
+		return data[j+i*j];
+	}
+
+	private:
+		int m,n;
+		int* data;
+};

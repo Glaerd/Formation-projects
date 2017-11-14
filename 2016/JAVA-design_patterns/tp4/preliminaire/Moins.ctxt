@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=op
+comment0.target=Moins(Expression)
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=c
+comment2.target=int\ interprete(Contexte)
+numComments=3
