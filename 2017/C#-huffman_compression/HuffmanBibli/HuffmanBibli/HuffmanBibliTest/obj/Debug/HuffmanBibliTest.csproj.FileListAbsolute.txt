@@ -1,0 +1,15 @@
+U:\E5\Huffman\HuffmanElo\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibliTest.exe.config
+U:\E5\Huffman\HuffmanElo\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.csprojResolveAssemblyReference.cache
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.csprojResolveAssemblyReference.cache
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.csproj.CoreCompileInputs.cache
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibliTest.exe.config
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibliTest.exe
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibliTest.pdb
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibli.dll
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanData.dll
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibli.pdb
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.exe
+C:\Users\magna\Desktop\HuffmanBibliFinitoOuPresque\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.pdb
+C:\Users\magnanc\Downloads\HuffmanBibli\HuffmanBibli\HuffmanBibliTest\bin\Debug\HuffmanBibliTest.exe.config
+C:\Users\magnanc\Downloads\HuffmanBibli\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.exe
+C:\Users\magnanc\Downloads\HuffmanBibli\HuffmanBibli\HuffmanBibliTest\obj\Debug\HuffmanBibliTest.pdb
