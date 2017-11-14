@@ -1,0 +1,2 @@
+void printLine(char * line);
+int FirstLine();

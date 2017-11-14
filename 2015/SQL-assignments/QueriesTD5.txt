@@ -1,0 +1,28 @@
+Exo1a :
+SELECT OrderID, LastName, FirstName FROM orders JOIN employees ON employees.EmployeeID = orders.EmployeeID ORDER BY OrderID;
+
+Exo1b :
+SELECT OrderID AS Identifiant, LastName AS Nom, FirstName AS Prenom FROM orders JOIN employees ON employees.EmployeeID = orders.EmployeeID ORDER BY OrderID;
+
+Exo1c :
+SELECT OrderID AS ID_Commande, LastName AS Nom, FirstName AS Prenom, CompanyName AS Nom_Entreprise FROM orders JOIN employees ON employees.EmployeeID = orders.EmployeeID JOIN customers ON orders.CustomerID = customers.CustomerID WHERE OrderDate > '1998-01-01';
+
+Exo2a :
+SELECT COUNT(distinct EmployeeID) AS nombre_employes, COUNT(distinct CustomerID) AS nombre_client, employees.City FROM employees JOIN customers ON employees.City = customers.City GROUP BY City ORDER BY COUNT(EmployeeID);
+
+Exo2b :
+SELECT COUNT(distinct EmployeeID) AS nombre_employes, COUNT(distinct CustomerID) AS nombre_client, employees.City FROM employees RIGHT JOIN customers ON employees.City = customers.City GROUP BY City ORDER BY COUNT(EmployeeID);
+
+Exo2c :
+SELECT COUNT(distinct EmployeeID) AS nombre_employes, COUNT(distinct CustomerID) AS nombre_client, employees.City FROM employees LEFT JOIN customers ON employees.City = customers.City GROUP BY City ORDER BY COUNT(EmployeeID);
+
+Exo3 :
+SELECT concat(m.FirstName,' ',m.LastName) AS Manager, m.EmployeeID, concat(e.FirstName,' ',e.LastName), e.EmployeeID FROM employees AS e JOIN employees AS m ON e.ReportsTo = m.EmployeeID;
+
+Exo4 :
+SELECT Phone FROM suppliers 
+UNION ALL
+SELECT Phone FROM customers 
+UNION ALL
+SELECT Phone FROM shippers
+ ORDER BY Phone;

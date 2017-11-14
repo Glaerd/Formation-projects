@@ -1,0 +1,227 @@
+I\
+
+3)
+
+CREATE table Etudiant(
+NUMETU int(3) PRIMARY KEY NOT NULL,
+NOM VARCHAR(50) NOT NULL,
+PRENOM VARCHAR(50),
+DATENAISS date,
+RUE VARCHAR(100),CP int,
+VILLE VARCHAR(50)
+)
+
+
+CREATE table Matiere(
+CODEMAT VARCHAR(3) PRIMARY KEY NOT NULL,
+LIBELLE VARCHAR(50) UNIQUE,
+COEF float
+)
+
+
+CREATE table Epreuve(
+NUMEPREUVE int(5) PRIMARY KEY NOT NULL,
+DATEPREUVE date,
+LIEU VARCHAR(50),
+CODEMAT VARCHAR(3),
+FOREIGN KEY (CODEMAT) REFERENCES Matiere(CODEMAT)
+)
+
+CREATE table Notation(
+NUMETU int(3),
+NUMEPREUVE int(5),
+NOTE float,
+FOREIGN KEY (NUMETU) REFERENCES Etudiant(NUMETU),
+FOREIGN KEY (NUMEPREUVE) REFERENCES Epreuve(NUMEPREUVE),
+CHECK (NOTE BETWEEN 0 AND 20)
+)
+
+1)
+
+INSERT INTO Etudiant(NUMETU,NOM,PRENOM,DATENAISS,RUE,CP,VILLE)
+
+VALUES
+
+(110,'Dupont','Albert',DATE('1980-06-01'),'Rue de Crimée',69001,'Lyon'),
+(222,'West','James',DATE('1983-09-03'),'Studio',NULL,'Hollywood'),
+(300,'Martin','Marie',DATE('1988-06-05'),'Rue des Acacias',69130,'Ecully'),
+(421,'Durand','Gaston',DATE('1980-11-15'),'Rue de la Meuse',69008,'Lyon'),
+(575,'Titgoutte','Justine',DATE('1985-02-28'),'Chemin de Château',69630,'Chaponost'),
+(667,'Dupond','Noémie',DATE('1987-09-18'),'Rue de Dôle',69007,'Lyon'),
+(999,'Phantom','Marcel',DATE('1960-01-30'),NULL,NULL,NULL)
+;
+
+INSERT INTO Matiere(CODEMAT,LIBELLE,COEF)
+
+VALUES
+
+('STA','Statistique',0.4),
+
+('INF','Informatique',0.4),
+
+('ECO','Econométrie',0.2)
+;
+
+INSERT INTO Epreuve(NUMEPREUVE,DATEPREUVE,LIEU,CODEMAT)
+
+VALUES
+
+(11031,DATE('2003-12-15'),'Salle 191L','STA'),
+
+(11032,DATE('2004-04-01'),'Amphi G','STA'),
+
+(21031,DATE('2003-10-30'),'Salle 191L','INF'),
+
+(21032,DATE('2004-06-01'),'Salle 192L','INF'),
+
+(31030,DATE('2004-06-02'),'Salle 05R','ECO')
+;
+
+INSERT INTO Notation(NUMETU,NUMEPREUVE,NOTE)
+
+VALUES
+
+(110,11031,10),
+
+(110,11032,11.5),
+
+(110,21031,8.5),
+
+(110,21032,NULL),
+
+(110,31030,13),
+
+(222,11031,9),
+
+(222,11032,14),
+
+(222,21031,12),
+
+(222,21032,16),
+
+(222,31030,20),
+
+(300,11031,14),
+
+(300,11032,20),
+
+(300,21031,20),
+
+(300,21032,13.5),
+
+(300,31030,16),
+
+(421,11031,5.5),
+
+(421,11032,17),
+
+(421,21031,1.5),
+
+(421,21032,NULL),
+
+(421,31030,10),
+
+(575,11031,13),
+
+(575,11032,19),
+
+(575,21031,12.5),
+
+(575,21032,14),
+
+(575,31030,7),
+
+(667,11031,16),
+
+(667,11032,20),
+
+(667,21031,8.5),
+
+(667,21032,9.5)
+;
+
+2)
+
+INSERT INTO Etudiant(NUMETU,NOM,PRENOM,DATENAISS,RUE,CP,VILLE)
+
+VALUES
+
+(1100,'TOTO','TAlbert',DATE('1981-07-01'),'Rue de Crimée',75019,'Paris');
+
+INSERT INTO Notation(NUMETU,NUMEPREUVE,NOTE)
+
+VALUES
+
+(1100,31031,13);
+
+
+
+
+II\
+
+1)
+
+Select NOM FROM Etudiant ORDER BY NOM DESC
+
+2)
+
+Select DATEPREUVE, NUMEPREUVE, LIBELLE FROM Epreuve
+JOIN Matiere ON Matiere.CODEMAT = Epreuve.CODEMAT
+WHERE DATEPREUVE BETWEEN DATE('2004-01-01') AND DATE('2004-06-30')
+
+3)
+
+SELECT COUNT(NUMEPREUVE) FROM Epreuve
+
+4)
+
+SELECT COUNT(*) FROM Notation WHERE NOTE IS NULL
+
+5)
+
+SELECT NOTE, NOM, PRENOM FROM Notation 
+JOIN Etudiant ON Notation.NUMETU = Etudiant.NUMETU
+
+6)
+
+SELECT NOM, PRENOM, AVG(NOTE) FROM Notation 
+JOIN Etudiant ON Notation.NUMETU = Etudiant.NUMETU
+GROUP BY Notation.NUMETU ORDER BY AVG(NOTE) DESC
+
+7)
+
+SELECT LIBELLE, AVG(NOTE) FROM Notation 
+JOIN (SELECT *, COUNT(*) AS somme FROM Epreuve GROUP BY Epreuve.CODEMAT HAVING somme > 1) AS _Epreuve ON Notation.NUMEPREUVE = _Epreuve.NUMEPREUVE
+JOIN Matiere ON _Epreuve.CODEMAT = Matiere.CODEMAT
+GROUP BY Matiere.CODEMAT
+
+8)
+
+SELECT AVG(NOTE), COUNT(*) AS somme FROM Notation 
+JOIN Epreuve ON Notation.NUMEPREUVE = Epreuve.NUMEPREUVE
+GROUP BY Epreuve.NUMEPREUVE
+HAVING somme >= 6
+
+9)
+
+SELECT NOM, PRENOM , NOTE FROM Notation 
+JOIN Etudiant ON Notation.NUMETU = Etudiant.NUMETU
+WHERE Notation.NOTE IS NULL
+
+10)
+
+SELECT NOM, PRENOM , Count(NOTE) AS somme FROM Notation 
+JOIN Etudiant ON Notation.NUMETU = Etudiant.NUMETU
+GROUP BY Etudiant.NUMETU
+HAVING somme = 0
+
+11)
+
+SELECT MIN(moyenne) FROM (SELECT NOM, PRENOM, AVG(NOTE) AS moyenne FROM Notation
+JOIN Etudiant ON Notation.NUMETU = Etudiant.NUMETU
+JOIN Epreuve ON Notation.NUMEPREUVE = Epreuve.NUMEPREUVE
+JOIN (SELECT * FROM Matiere WHERE CODEMAT = 'INF') AS _Matiere ON Epreuve.CODEMAT = _Matiere.CODEMAT
+GROUP BY Etudiant.NUMETU) AS temp_table
+
+12)
+

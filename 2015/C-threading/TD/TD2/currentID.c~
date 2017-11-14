@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+#include "currentID.h"
+
+int currentProcessID(char* text, int i) {
+
+	printf("Processus %d, i = %d - %s\n", getpid(), i, text);
+}

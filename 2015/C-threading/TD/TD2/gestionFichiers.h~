@@ -1,0 +1,5 @@
+#define TAILLEBUF 10000
+
+char * readFirstLine(int fd);
+
+int ecritLigne(int fd, char *c);

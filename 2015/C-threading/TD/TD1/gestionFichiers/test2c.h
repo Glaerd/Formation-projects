@@ -1,0 +1,1 @@
+void readLine(int fileDesc);

@@ -1,0 +1,98 @@
+Exo1 : 
+SELECT ContactName, Address, Region, City FROM customers;
+
+Exo2 :
+SELECT DISTINCT CompanyName FROM customers;
+
+Exo3 : 
+SELECT * FROM customers WHERE Country = 'France';
+
+Exo4 : 
+SELECT * FROM customers WHERE City = 'Toulouse' AND Country = 'France';
+
+Exo5 :
+SELECT max(UnitPrice) FROM products;
+
+Exo6 : 
+SELECT OrderID,ProductID,UnitPrice,Quantity,UnitPrice*Quantity AS TotalPrice FROM order_details;
+
+Exo7 :
+SELECT ProductID,UnitPrice FROM products WHERE UnitPrice BETWEEN 10 AND 40 ORDER BY UnitPrice;
+
+Exo8 :
+SELECT LastName, FirstName, Title FROM employees ORDER BY Title,LastName;
+
+Exo9a :
+SELECT LastName, FirstName, Title FROM employees WHERE Title = 'Sales Representative';
+
+Exo9b : 
+SELECT LastName, FirstName, Title FROM employees WHERE Title != 'Sales Representative';
+
+Exo10 :
+SELECT LastName, FirstName, Title FROM employees WHERE LastName > 'm';
+
+Exo11 :
+SELECT LastName, FirstName FROM employees WHERE Region IS NULL;
+-- SELECT LastName, FirstName FROM employees WHERE isnull(Region);
+
+Exo12 : 
+SELECT LastName, FirstName FROM employees WHERE Region IS NOT NULL;
+
+Exo13 : 
+SELECT LastName, FirstName FROM employees WHERE LastName > 'm' ORDER BY LastName;
+
+Exo14 : 
+SELECT LastName, FirstName FROM employees WHERE LastName BETWEEN 'J' AND 'M';
+
+Exo15 :
+SELECT LastName, FirstName, TitleOfCourtesy FROM employees WHERE TitleOfCourtesy LIKE 'M%';
+
+Exo16 :
+SELECT LastName, FirstName, TitleOfCourtesy FROM employees WHERE TitleOfCourtesy LIKE 'M_.';
+
+Exo17 :
+SELECT LastName, FirstName, TitleOfCourtesy FROM employees WHERE TitleOfCourtesy NOT LIKE 'M%s.';
+
+Exo18 :
+SELECT LastName, FirstName, TitleOfCourtesy FROM employees WHERE Title LIKE 'Sales Re%' AND TitleOfCourtesy = 'Mr.';
+
+Exo19a :
+SELECT LastName, FirstName FROM employees WHERE City = 'Seattle' OR City = 'Redmond' AND Title = 'Sales Representative';
+
+Exo19b :
+SELECT LastName, FirstName FROM employees WHERE (City = 'Seattle' OR City = 'Redmond') AND Title = 'Sales Representative';
+
+Exo20 :
+SELECT OrderID, Freight, Freight*1.1 AS FraisTaxe FROM orders WHERE Freight >= 500;
+
+Exo21 :
+SELECT COUNT(*) FROM employees;
+
+Exo22 :
+SELECT COUNT(*) FROM order_details WHERE ProductID = '3';
+
+Exo23 :
+SELECT AVG(UnitPrice) FROM products;
+
+Exo24 :
+SELECT Max(HireDate), Min(HireDate) FROM employees;
+
+Exo25 :
+SELECT COUNT(*), City FROM employees GROUP BY City;
+
+Exo26 :
+SELECT COUNT(*), City FROM employees GROUP BY City HAVING COUNT(*) >= 2;
+
+Exo27 :
+SELECT COUNT(*), City FROM employees WHERE Title = 'Sales Representative' GROUP BY City HAVING COUNT(*) >= 2;
+
+Exo28 :
+SELECT ProductName, UnitPrice FROM products WHERE UnitPrice = (SELECT MAX(UnitPrice) FROM products);
+
+Exo29 :
+SELECT CompanyName FROM customers WHERE CustomerID = (SELECT CustomerID FROM orders WHERE OrderID = 10290);
+-- SELECT CompanyName FROM customers INNER JOIN orders ON orders.CustomerID = customers.CustomerID WHERE OrderID = 10290;
+
+Exo30 :
+
+Exo31 :

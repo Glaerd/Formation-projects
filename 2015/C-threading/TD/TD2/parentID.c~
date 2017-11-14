@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+#include "parentID.h"
+
+int parentProcessID(char* text, int fd, int i) {
+
+	printf("Processus avec père %d, i = %d - %s\n", getppid(), i, text);
+
+}

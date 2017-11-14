@@ -1,0 +1,35 @@
+test: main.o
+	gcc main.o gestionFichiers.o id.o -o test
+
+testIB1: testIB1.o
+	gcc testIB1.o gestionFichiers.o id.o -o testIB1
+
+testIB2: testIB2.o
+	gcc testIB2.o gestionFichiers.o id.o -o testIB2
+
+II: II.o
+	gcc II.o -o II
+
+testIII1: testIII1.o
+	gcc testIII1.o -o testIII1
+
+main.o: main.c gestionFichiers.h id.h
+	gcc -c main.c
+
+testIB1.o: testIB1.c gestionFichiers.h id.h
+	gcc -c testIB1.c
+
+testIB2.o: testIB2.c gestionFichiers.h id.h
+	gcc -c testIB2.c
+
+II.o: II.c
+	gcc -c II.c
+
+testIII1.o: testIII1.c
+	gcc -c testIII1.c
+
+id.o : id.c id.h
+	gcc -c id.c
+
+gestionFichiers.o: gestionFichiers.c gestionFichiers.h
+	gcc -c gestionFichiers.c
