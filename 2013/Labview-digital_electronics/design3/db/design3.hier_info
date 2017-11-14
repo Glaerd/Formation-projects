@@ -1,0 +1,251 @@
+|design3
+
+
+|design3|seven_segment_decoder:inst
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst1
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst2
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst3
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst7
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst6
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst5
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+
+|design3|seven_segment_decoder:inst4
+hexa3 => Mux0.IN16
+hexa3 => Mux1.IN16
+hexa3 => Mux2.IN16
+hexa3 => Mux3.IN16
+hexa3 => Mux4.IN16
+hexa3 => Mux5.IN16
+hexa3 => Mux6.IN16
+hexa2 => Mux0.IN17
+hexa2 => Mux1.IN17
+hexa2 => Mux2.IN17
+hexa2 => Mux3.IN17
+hexa2 => Mux4.IN17
+hexa2 => Mux5.IN17
+hexa2 => Mux6.IN17
+hexa1 => Mux0.IN18
+hexa1 => Mux1.IN18
+hexa1 => Mux2.IN18
+hexa1 => Mux3.IN18
+hexa1 => Mux4.IN18
+hexa1 => Mux5.IN18
+hexa1 => Mux6.IN18
+hexa0 => Mux0.IN19
+hexa0 => Mux1.IN19
+hexa0 => Mux2.IN19
+hexa0 => Mux3.IN19
+hexa0 => Mux4.IN19
+hexa0 => Mux5.IN19
+hexa0 => Mux6.IN19
+
+

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ItemList()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ItemList\n
+comment1.params=pName\ pItem
+comment1.target=void\ setItem(java.lang.String,\ Item)
+comment1.text=\n\ Define\ an\ item\ \n\ @param\ pDescription\ Define\ Item's\ description\n\ @param\ pWeight\ Define\ Item\ weight.\n
+comment2.params=pItem
+comment2.target=Item\ getItem(java.lang.String)
+comment2.text=\n\ Accessor\ to\ the\ HashMap\n\ @return\ the\ HashMap\n\ @param\ pItem\ Define\ Item\ name\n
+comment3.params=name
+comment3.target=boolean\ exist(java.lang.String)
+comment3.text=\n\ return\ if\ an\ Item\ exists\n\ @param\ name\ Define\ Item\ name\n
+comment4.params=
+comment4.target=int\ getPlayerWeight()
+comment4.text=\n\ return\ the\ current\ Weight\ of\ all\ the\ Items\ of\ the\ list\n
+comment5.params=pItem
+comment5.target=void\ removeItem(java.lang.String)
+comment5.text=\n\ Remove\ an\ Item\ in\ the\ HashMap\n\ @param\ pitem\ The\ item\ to\ delete\n
+comment6.params=text
+comment6.target=java.lang.String\ getItemList(java.lang.String)
+comment6.text=\n\ Gives\ a\ message\ with\ all\ the\ items\ of\ the\ list\ and\ their\ description\n\ @param\ text\ Define\ a\ text\ to\ put\ in\ a\ area\ of\ the\ text\n
+comment7.params=
+comment7.target=java.lang.String\ getItemsDescription()
+comment7.text=\n\ Return\ the\ description\ of\ the\ items\ with\ their\ weight\n\ @return\ The\ item(s)\ description\n
+numComments=8

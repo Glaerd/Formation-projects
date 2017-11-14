@@ -1,0 +1,82 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+14
+1343
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+design3
+# storage
+db|design3.(0).cnf
+db|design3.(0).cnf
+# case_insensitive
+# source_file
+design3.bdf
+b97e6a7ac655c4b462532aab7e5a94ef
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+seven_segment_decoder
+# storage
+db|design3.(1).cnf
+db|design3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+|lab1|lab1|lab1|demo|seven_segment_decoder.vhd
+4d8821c7534076b340d99e8efa2c8044
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+seven_segment_decoder:inst
+seven_segment_decoder:inst1
+seven_segment_decoder:inst2
+seven_segment_decoder:inst3
+seven_segment_decoder:inst7
+seven_segment_decoder:inst6
+seven_segment_decoder:inst5
+seven_segment_decoder:inst4
+}
+# macro_sequence
+
+# end
+# complete
+

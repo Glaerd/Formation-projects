@@ -1,0 +1,3 @@
+Dependencies for Project 'Eteindre les avec switch', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4F589834)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "D:\Program files Zenbook (windows)\ARM\RV31\INC" -I "D:\Program files Zenbook (windows)\ARM\CMSIS\Include" -I "D:\Program files Zenbook (windows)\ARM\Inc\Luminary" --list "Startup.lst" --xref -o "Startup.o" --depend "Startup.d")
+F (.\prog3.s)(0x50CCDC05)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "D:\Program files Zenbook (windows)\ARM\RV31\INC" -I "D:\Program files Zenbook (windows)\ARM\CMSIS\Include" -I "D:\Program files Zenbook (windows)\ARM\Inc\Luminary" --list "prog3.lst" --xref -o "prog3.o" --depend "prog3.d")

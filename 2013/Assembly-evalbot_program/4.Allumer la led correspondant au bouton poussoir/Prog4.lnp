@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "startup.o" "prog4.o" 
+--library_type=microlib --strict --scatter "Prog4.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Prog4.map" -o Prog4.axf

@@ -1,0 +1,11 @@
+|design1
+pin_name1 => inst.IN0
+pin_name2 => inst.IN1
+pin_name3 => inst1.IN0
+pin_name4 => inst1.IN1
+pin_name5 => inst2.IN0
+pin_name6 => inst2.IN1
+pin_name7 => inst3.IN0
+pin_name8 => inst3.IN1
+
+

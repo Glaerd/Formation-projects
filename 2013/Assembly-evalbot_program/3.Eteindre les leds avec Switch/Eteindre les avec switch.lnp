@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "startup.o" "prog3.o" 
+--library_type=microlib --strict --scatter "Eteindre les avec switch.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Eteindre les avec switch.map" -o "Eteindre les avec switch.axf"

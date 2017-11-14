@@ -1,0 +1,3 @@
+Dependencies for Project 'programme', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4F588A24)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "D:\Program files Zenbook (windows)\ARM\RV31\INC" -I "D:\Program files Zenbook (windows)\ARM\CMSIS\Include" -I "D:\Program files Zenbook (windows)\ARM\Inc\Luminary" --list "Startup.lst" --xref -o "Startup.o" --depend "Startup.d")
+F (.\programme.s)(0x50BE6859)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "D:\Program files Zenbook (windows)\ARM\RV31\INC" -I "D:\Program files Zenbook (windows)\ARM\CMSIS\Include" -I "D:\Program files Zenbook (windows)\ARM\Inc\Luminary" --list "programme.lst" --xref -o "programme.o" --depend "programme.d")

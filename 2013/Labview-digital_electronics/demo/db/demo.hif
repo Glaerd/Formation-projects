@@ -1,0 +1,154 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+14
+1343
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+demo
+# storage
+db|demo.(0).cnf
+db|demo.(0).cnf
+# case_insensitive
+# source_file
+demo.bdf
+38d0bca5de6263c1d93cfa3b92384fad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+seven_segment_decoder
+# storage
+db|demo.(1).cnf
+db|demo.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seven_segment_decoder.vhd
+4d8821c7534076b340d99e8efa2c8044
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+seven_segment_decoder:dec1
+seven_segment_decoder:dec2
+seven_segment_decoder:dec3
+seven_segment_decoder:dec4
+}
+# macro_sequence
+
+# end
+# entity
+BCD_counter
+# storage
+db|demo.(2).cnf
+db|demo.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bcd_counter.vhd
+366ffabd4f404d8bd24bfcba9e9cf5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n_digit
+4
+PARAMETER_UNKNOWN
+USR
+}
+# hierarchies {
+BCD_counter:ctr
+}
+# macro_sequence
+
+# end
+# entity
+clock_divider
+# storage
+db|demo.(3).cnf
+db|demo.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clock_divider.vhd
+c9b7d1c5e9a50ad823ae62a43f5c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+board_frequency
+50000000.0
+PARAMETER_SIGNED_FLOAT
+USR
+user_frequency
+8.0
+PARAMETER_SIGNED_FLOAT
+USR
+}
+# hierarchies {
+clock_divider:ckdiv
+}
+# macro_sequence
+
+# end
+# complete
+

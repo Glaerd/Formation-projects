@@ -1,0 +1,5 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" 
+-I "D:\Program files Zenbook (windows)\ARM\RV31\INC" 
+-I "D:\Program files Zenbook (windows)\ARM\CMSIS\Include" 
+-I "D:\Program files Zenbook (windows)\ARM\Inc\Luminary" 
+--list "programme.lst" --xref -o "programme.o" --depend "programme.d" "programme.s"
